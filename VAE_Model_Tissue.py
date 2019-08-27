@@ -27,12 +27,9 @@ from torchvision.utils import save_image
 import displayVAE
 from displayVAE import display_images
 
-<<<<<<< HEAD:VAE_Model_Tissue
-=======
 import uuid
 
 #from displayVAE import acquire_data_hook
->>>>>>> 667cbd8f4683e1619eb1e009c0dcd30402985cc3:VAE_Model_Tissue.py
 
 
 import sys
