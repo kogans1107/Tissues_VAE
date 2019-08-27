@@ -27,12 +27,25 @@ from torchvision.utils import save_image
 import displayVAE
 from displayVAE import display_images
 
+<<<<<<< HEAD:VAE_Model_Tissue
+=======
+import uuid
+
+#from displayVAE import acquire_data_hook
+>>>>>>> 667cbd8f4683e1619eb1e009c0dcd30402985cc3:VAE_Model_Tissue.py
 
 
 import sys
 
-if 'DLDB2.0' not in sys.path[1]:
-    sys.path.insert(1,'/home/karrington/git.workspace/DLDB2.0')
+dldb_path = '/home/karrington/git.workspace/DLDB2.0'  # default for Karrington, in her home area
+                                                        # on muddlehead
+
+if uuid.getnode() == 25965843724714:  # Bill's machine, different path
+    dldb_path = '/home/bill/Desktop/Desktop/work/Brent Lab/Boucheron CNNs/DLDBproject'
+
+    
+if dldb_path not in sys.path[1]:
+    sys.path.insert(1,dldb_path)
 
 
 import dldb
