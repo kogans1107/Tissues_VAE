@@ -37,7 +37,7 @@ import sys
 dldb_path = '/home/karrington/git.workspace/DLDB2.0'  # default for Karrington, in her home area
                                                         # on muddlehead
 
-if uuid.getnode() == 25965843724714:  # Bill's machine, different path
+if uuid.getnode() == 195218318855624:  # Bill's machine, different path
     dldb_path = '/home/bill/Desktop/Desktop/work/Brent Lab/Boucheron CNNs/DLDBproject'
 
     
